@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Astrologics</string>
+
+    <!-- Main Activity-->
+    <string name="home_title">Homepage</string>
+    <string name="horoscope_title">Your Horoscope</string>
+    <string name="compatibility_title">Compatibility</string>
+
+    <!--Bottom menu-->
+    <string name="bottom_home_item">Home</string>
+    <string name="bottom_horoscope_item">Horoscope</string>
+    <string name="bottom_compatibility_item">Compatibility</string>
+
+
+    <!--Home Fragment-->
+    <string name="home_sub">Your sign</string>
+    <string name="home_sub_2">All signs</string>
+
+    <!--Horoscope Fragment-->
+    <string name="horoscope_sub">Today\'s horoscope 🌟</string>
+    <string name="horoscope_sub_2">Lucky number 🍀</string>
+    <string name="horoscope_sub_3">Lucky time 🕑</string>
+    <string name="horoscope_sub_4">Your mood 🥰</string>
+    <string name="horoscope_sub_5">Your planet 🪐</string>
+    <string name="horoscope_sub_6">Opposed sign 🔮</string>
+    <string name="horoscope_sub_7">Your element 🔥</string>
+    <string name="horoscope_loading">Loading…</string>
+
+    <!-- Compatibility Fragment-->
+    <string name="compatibility_sub">Choose two signs</string>
+    <string name="compatibility_result">💛 50%</string>
+
+
+    <!--Pop-up Date Selector Window-->
+    <string name="date_picker_title">What\'s your birthday ?</string>
+    <string name="date_picker_subtitle">Select a date</string>
+    <string name="date_picker_confirm_button_text">Confirm</string>
+
+    <!--Pop-up clicked sign Window-->
+    <string name="clicked_sign_sub">Description</string>
+    <string name="clicked_sign_sub2">Planet</string>
+    <string name="clicked_sign_sub3">Opposed sign</string>
+    <string name="clicked_sign_sub4">Element</string>
+
+    <!--Sign Customize-->
+    <string name="item_sign_name">Sign Name</string>
+    <string name="item_sign_description">Sign description</string>
+    <string name="item_sign_planet">Sign planet</string>
+    <string name="item_sign_opposed_sign">Sign opposed sign</string>
+    <string name="item_sign_element">Sign element</string>
+
+    <!--Preference file key-->
+    <string name="preference_file_key">5468487</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+</resources>

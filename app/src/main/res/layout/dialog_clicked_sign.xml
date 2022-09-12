@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="330dp"
+    android:layout_height="600dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_bg">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        app:cardBackgroundColor="@color/lightBlack"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/dialog_clicked_sign_iv_sign_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_pending"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/lightPurple" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/dialog_clicked_sign_iv_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="@dimen/little_margin"
+        android:layout_marginEnd="@dimen/little_margin"
+        android:src="@drawable/ic_close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/lightPurple" />
+
+    <TextView
+        android:id="@+id/dialog_clicked_sign_tv_sign_name"
+        style="@style/PopupTitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_margin"
+        android:text="@string/item_sign_name"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView4"
+        app:layout_constraintStart_toEndOf="@+id/cardView4"
+        app:layout_constraintTop_toTopOf="@+id/cardView4" />
+
+    <TextView
+        android:id="@+id/dialog_clicked_sign_tv_sub"
+        style="@style/SubtitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginStart="@dimen/default_margin"
+        android:text="@string/clicked_sign_sub"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4" />
+
+    <TextView
+        android:id="@+id/dialog_clicked_sign_tv_sign_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/item_sign_description"
+        app:layout_constraintStart_toStartOf="@+id/dialog_clicked_sign_tv_sub"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_clicked_sign_tv_sub"
+        style="@style/DefaultTextStyle"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginEnd="@dimen/default_margin"
+        android:layout_marginTop="@dimen/little_margin"/>
+
+    <TextView
+        android:id="@+id/dialog_clicked_sign_tv_sub2"
+        style="@style/SubtitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clicked_sign_sub2"
+        android:layout_marginTop="@dimen/default_margin"
+        app:layout_constraintStart_toStartOf="@+id/dialog_clicked_sign_tv_sign_description"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_clicked_sign_tv_sign_description" />
+
+    <TextView
+        android:id="@+id/dialog_clicked_sign_tv_sign_planet"
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/item_sign_planet"
+        android:layout_marginTop="@dimen/little_margin"
+        app:layout_constraintStart_toStartOf="@+id/dialog_clicked_sign_tv_sub2"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_clicked_sign_tv_sub2" />
+
+    <TextView
+        android:id="@+id/dialog_clicked_sign_tv_sub3"
+        style="@style/SubtitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clicked_sign_sub3"
+        android:layout_marginTop="@dimen/default_margin"
+        app:layout_constraintStart_toStartOf="@+id/dialog_clicked_sign_tv_sign_planet"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_clicked_sign_tv_sign_planet" />
+
+    <TextView
+        android:id="@+id/dialog_clicked_sign_tv_sign_opposed_sign"
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/little_margin"
+        android:text="@string/item_sign_opposed_sign"
+        app:layout_constraintStart_toStartOf="@+id/dialog_clicked_sign_tv_sub3"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_clicked_sign_tv_sub3" />
+
+    <TextView
+        android:id="@+id/dialog_clicked_sign_tv_sub4"
+        style="@style/SubtitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clicked_sign_sub4"
+        app:layout_constraintStart_toStartOf="@+id/dialog_clicked_sign_tv_sign_opposed_sign"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_clicked_sign_tv_sign_opposed_sign"
+        android:layout_marginTop="@dimen/default_margin"/>
+
+    <TextView
+        android:id="@+id/dialog_clicked_sign_tv_sign_element"
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/item_sign_element"
+        app:layout_constraintStart_toStartOf="@+id/dialog_clicked_sign_tv_sub4"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_clicked_sign_tv_sub4"
+        android:layout_marginTop="@dimen/little_margin"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

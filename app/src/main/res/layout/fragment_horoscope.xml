@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/fragment_horoscope_tv_sub"
+        style="@style/SubtitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:text="@string/horoscope_sub"
+        android:layout_marginStart="@dimen/default_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fragment_horoscope_tv_sign_horoscope"
+        style="@style/DefaultTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/little_margin"
+        android:text='@string/horoscope_loading'
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginEnd="@dimen/default_margin"
+        app:layout_constraintTop_toBottomOf="@id/fragment_horoscope_tv_sub" />
+
+    <View
+        android:id="@+id/fragment_horoscope_separation"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/fragment_horoscope_tv_sub2"
+        style="@style/SubtitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/large_margin"
+        app:layout_constraintStart_toStartOf="@id/fragment_horoscope_tv_sign_horoscope"
+        app:layout_constraintTop_toBottomOf="@id/fragment_horoscope_tv_sign_horoscope"
+        android:text = "@string/horoscope_sub_2"/>
+
+    <TextView
+        android:id="@+id/fragment_horoscope_tv_sign_lucky_number"
+        style="@style/DefaultTextStyle"
+        android:layout_marginTop="@dimen/little_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/horoscope_loading"
+        app:layout_constraintStart_toStartOf="@+id/fragment_horoscope_tv_sub2"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_horoscope_tv_sub2" />
+
+    <TextView
+        android:id="@+id/fragment_horoscope_tv_sub3"
+        style="@style/SubtitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/large_margin"
+        android:layout_marginStart="@dimen/default_margin"
+        android:text="@string/horoscope_sub_3"
+        app:layout_constraintStart_toEndOf="@+id/fragment_horoscope_separation"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_horoscope_tv_sign_horoscope" />
+
+    <TextView
+        android:id="@+id/fragment_horoscope_tv_sign_lucky_time"
+        style="@style/DefaultTextStyle"
+        android:layout_marginTop="@dimen/little_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/horoscope_loading"
+        app:layout_constraintStart_toStartOf="@+id/fragment_horoscope_tv_sub3"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_horoscope_tv_sub3" />
+
+    <TextView
+        android:id="@+id/fragment_horoscope_tv_sub4"
+        style="@style/SubtitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/horoscope_sub_4"
+        android:layout_marginTop="@dimen/large_margin"
+        app:layout_constraintStart_toStartOf="@+id/fragment_horoscope_tv_sign_lucky_number"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_horoscope_tv_sign_lucky_number" />
+
+    <TextView
+        android:id="@+id/fragment_horoscope_tv_sign_mood"
+        android:layout_marginTop="@dimen/little_margin"
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/horoscope_loading"
+        app:layout_constraintStart_toStartOf="@+id/fragment_horoscope_tv_sub4"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_horoscope_tv_sub4" />
+
+
+    <TextView
+        android:id="@+id/fragment_horoscope_tv_sub5"
+        style="@style/SubtitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/large_margin"
+        android:text="@string/horoscope_sub_5"
+        app:layout_constraintStart_toStartOf="@+id/fragment_horoscope_tv_sign_lucky_time"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_horoscope_tv_sign_lucky_time" />
+
+    <TextView
+        android:id="@+id/fragment_horoscope_tv_sign_planet"
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/little_margin"
+        android:layout_height="wrap_content"
+        android:text="@string/horoscope_loading"
+        app:layout_constraintStart_toStartOf="@+id/fragment_horoscope_tv_sub5"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_horoscope_tv_sub5" />
+
+    <TextView
+        android:id="@+id/fragment_horoscope_tv_sub6"
+        style="@style/SubtitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/horoscope_sub_6"
+        app:layout_constraintStart_toStartOf="@+id/fragment_horoscope_tv_sign_mood"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_horoscope_tv_sign_mood"
+        android:layout_marginTop="@dimen/large_margin"/>
+
+    <TextView
+        android:id="@+id/fragment_horoscope_tv_sign_opposed_sign"
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/little_margin"
+        android:layout_height="wrap_content"
+        android:text="@string/horoscope_loading"
+        app:layout_constraintStart_toStartOf="@+id/fragment_horoscope_tv_sub6"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_horoscope_tv_sub6" />
+
+    <TextView
+        android:id="@+id/fragment_horoscope_tv_sub7"
+        style="@style/SubtitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/horoscope_sub_7"
+        android:layout_marginTop="@dimen/large_margin"
+        app:layout_constraintStart_toStartOf="@+id/fragment_horoscope_tv_sign_planet"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_horoscope_tv_sign_planet" />
+
+    <TextView
+        android:id="@+id/fragment_horoscope_tv_sign_element"
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/horoscope_loading"
+        android:layout_marginTop="@dimen/little_margin"
+        app:layout_constraintStart_toStartOf="@+id/fragment_horoscope_tv_sub7"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_horoscope_tv_sub7" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
